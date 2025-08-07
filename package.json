@@ -1,0 +1,16 @@
+{
+  "name": "tls-client-node",
+  "version": "1.2.0-release",
+  "description": "TLS Client Nodejs",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test",
+    "postinstall": "node ./posted/postinstall.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "ffi-rs": "^1.3.0"
+  }
+}

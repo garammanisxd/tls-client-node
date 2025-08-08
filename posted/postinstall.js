@@ -45,7 +45,7 @@ if(sys_platform === "win32") {
 } else if(sys_platform === "android") {
   typefile = "linux"
   extlib = "so"
-  archdist = arch == "arm64"? arch:"armv7"
+  archdist = sys_arch == "arm64"? sys_arch:"armv7"
 } else {
   console.warn("[WARNING]: This os not recommend to install this!")
   typefile = "linux"
@@ -83,4 +83,5 @@ module.exports = {
   fileName,
   libraryPath,
   downloadFile
+
 }
